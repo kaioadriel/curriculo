@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<!-- Versão atualizada: foco administrativo, tecnologia, IA, planilhas, soluções personalizadas e disponibilidade presencial ou home office. -->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página profissional de Kaio Adriel Guimarães, PCD. Auxiliar/Assistente Administrativo com experiência em tecnologia, planilhas, Inteligência Artificial e soluções administrativas personalizadas." />
+  <meta name="theme-color" content="#1f3b73" />
+  <meta property="og:title" content="Kaio Adriel Guimarães | Auxiliar/Assistente Administrativo" />
+  <meta property="og:description" content="Profissional PCD com experiência administrativa, Excel avançado, tecnologia, Inteligência Artificial, criação de controles, planilhas e soluções digitais para apoio aos setores." />
+  <meta property="og:type" content="website" />
+  <title>Kaio Adriel Guimarães | Página Profissional</title>
+
+  <style>
+    :root {
+      --navy: #10243f;
+      --blue: #1f3b73;
+      --sky: #eaf3ff;
+      --ink: #162033;
+      --muted: #5f6f86;
+      --paper: #ffffff;
+      --soft: #f5f8fc;
+      --line: #dce6f2;
+      --gold: #d99a28;
+      --green: #1f8a70;
+      --shadow: 0 22px 60px rgba(16, 36, 63, 0.14);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(31, 59, 115, 0.18), transparent 36rem),
+        radial-gradient(circle at 85% 12%, rgba(217, 154, 40, 0.15), transparent 26rem),
+        linear-gradient(180deg, #f7fbff 0%, #eef4fb 42%, #ffffff 100%);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 1rem;
+      padding: 0.7rem 1rem;
+      background: var(--navy);
+      color: #fff;
+      border-radius: 999px;
+      z-index: 99;
+    }
+
+    .skip-link:focus {
+      left: 1rem;
+    }
+
+    .container {
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(18px);
+      background: rgba(247, 251, 255, 0.82);
+      border-bottom: 1px solid rgba(220, 230, 242, 0.75);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--blue), var(--navy));
+      box-shadow: 0 12px 28px rgba(31, 59, 115, 0.25);
+      font-weight: 900;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      display: inline-flex;
+      padding: 0.55rem 0.8rem;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+      transition: 180ms ease;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: var(--sky);
+      color: var(--blue);
+      outline: none;
+    }
+
+    .hero {
+      padding: 5rem 0 3rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .hero-card,
+    .contact-card,
+    .section-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(220, 230, 242, 0.9);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: clamp(1.8rem, 5vw, 4rem);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 18rem;
+      height: 18rem;
+      right: -8rem;
+      top: -9rem;
+      border-radius: 50%;
+      background: rgba(31, 59, 115, 0.08);
+    }
+
+
+
+    .pcd-badge-name {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      margin-top: 0.9rem;
+      padding: 0.36rem 0.72rem;
+      border-radius: 999px;
+      background: var(--sky);
+      color: var(--blue);
+      border: 1px solid var(--line);
+      font-size: 0.88rem;
+      font-weight: 850;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.42rem 0.75rem;
+      border-radius: 999px;
+      background: #fff7e8;
+      color: #8a5b10;
+      border: 1px solid #f1d9aa;
+      font-size: 0.9rem;
+      font-weight: 800;
+      margin-bottom: 1.2rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.1;
+      color: var(--navy);
+      margin: 0;
+      letter-spacing: -0.045em;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 7vw, 5.8rem);
+      max-width: 9ch;
+    }
+
+    .subtitle {
+      font-size: clamp(1.18rem, 2.4vw, 1.55rem);
+      color: var(--muted);
+      max-width: 720px;
+      margin: 1.35rem 0 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      min-height: 48px;
+      padding: 0.78rem 1rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 800;
+      transition: 180ms ease;
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, var(--blue), var(--navy));
+      color: #fff;
+      box-shadow: 0 16px 34px rgba(31, 59, 115, 0.25);
+    }
+
+    .button.secondary {
+      background: #fff;
+      color: var(--blue);
+      border-color: var(--line);
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .contact-card {
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .pcd-panel {
+      padding: 1.25rem;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, #17345f, #10243f);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pcd-panel::before {
+      content: "";
+      position: absolute;
+      width: 12rem;
+      height: 12rem;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      right: -5rem;
+      bottom: -5rem;
+    }
+
+    .pcd-panel strong {
+      display: block;
+      font-size: 1.25rem;
+      letter-spacing: -0.03em;
+    }
+
+    .pcd-panel span {
+      display: block;
+      color: rgba(255,255,255,0.76);
+      margin-top: 0.3rem;
+    }
+
+    .quick-info {
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem;
+      border-radius: var(--radius-md);
+      background: var(--soft);
+      border: 1px solid var(--line);
+    }
+
+    .info-item small {
+      color: var(--muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .info-item span,
+    .info-item a {
+      font-weight: 800;
+      color: var(--navy);
+      text-align: right;
+      word-break: break-word;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .stat {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,0.76);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.65rem;
+      color: var(--blue);
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-top: 0.35rem;
+    }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .section-title p {
+      max-width: 560px;
+      color: var(--muted);
+      margin: 0;
+      font-weight: 650;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 1rem;
+    }
+
+    .section-card {
+      padding: clamp(1.2rem, 3vw, 2rem);
+      box-shadow: 0 16px 42px rgba(16, 36, 63, 0.08);
+    }
+
+    .about-text {
+      font-size: 1.08rem;
+      color: #34445c;
+      margin: 0;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 1.2rem;
+    }
+
+    .pill {
+      padding: 0.55rem 0.75rem;
+      border-radius: 999px;
+      background: var(--sky);
+      color: var(--blue);
+      border: 1px solid #cfe0f6;
+      font-weight: 800;
+      font-size: 0.94rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .job {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 1rem;
+      padding: 1.15rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: #fff;
+    }
+
+    .job time {
+      color: var(--blue);
+      font-weight: 900;
+      font-size: 0.9rem;
+    }
+
+    .job h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .job .company {
+      color: var(--muted);
+      font-weight: 800;
+      margin-bottom: 0.45rem;
+    }
+
+    .job p {
+      margin: 0;
+      color: #415169;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .skill-box {
+      padding: 1.2rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .skill-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-box p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .courses {
+      columns: 2;
+      column-gap: 2rem;
+      padding-left: 1.2rem;
+      margin: 0;
+      color: #405066;
+      font-weight: 650;
+    }
+
+    .courses li {
+      margin-bottom: 0.55rem;
+      break-inside: avoid;
+    }
+
+    .cta {
+      margin: 3rem 0 4rem;
+      padding: clamp(1.6rem, 5vw, 3rem);
+      border-radius: var(--radius-xl);
+      color: #fff;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(217, 154, 40, 0.33), transparent 18rem),
+        linear-gradient(135deg, var(--navy), #173d72);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .cta h2 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      margin-bottom: 0.65rem;
+    }
+
+    .cta p {
+      margin: 0;
+      color: rgba(255,255,255,0.78);
+      max-width: 760px;
+      font-size: 1.08rem;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      min-width: 260px;
+      justify-self: center;
+      text-align: center;
+    }
+
+    .cta-actions .button {
+      min-width: 190px;
+    }
+
+    footer {
+      padding: 2rem 0;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .grid-2,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .stats,
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      .job {
+        grid-template-columns: 1fr;
+      }
+
+      .courses {
+        columns: 1;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(100% - 1.2rem, var(--max));
+      }
+
+      .hero {
+        padding-top: 2.5rem;
+      }
+
+      .stats,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .section-title {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  
+
+    /* Paleta final: azul claro, branco e cinza claro */
+    :root {
+      --navy: #2b4f78;
+      --blue: #5f8fc4;
+      --sky: #dcecff;
+      --ink: #1b2a3d;
+      --muted: #647386;
+      --paper: #ffffff;
+      --soft: #eaf4ff;
+      --line: #cfdae8;
+      --gold: #8fa9c7;
+      --green: #5f8fc4;
+      --shadow: 0 18px 46px rgba(43, 79, 120, 0.12);
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(95, 143, 196, 0.16), transparent 34rem),
+        radial-gradient(circle at 85% 12%, rgba(210, 222, 237, 0.72), transparent 28rem),
+        linear-gradient(180deg, #f7faff 0%, #edf3fa 46%, #ffffff 100%);
+    }
+
+    header {
+      position: static;
+      top: auto;
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: none;
+    }
+
+    .brand-mark {
+      background: linear-gradient(135deg, #5f8fc4, #4775a9);
+      box-shadow: 0 10px 24px rgba(95, 143, 196, 0.24);
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: #eaf4ff;
+      color: #2b4f78;
+    }
+
+    .hero-card,
+    .contact-card {
+      background: rgba(255, 255, 255, 0.94);
+      border-color: var(--line);
+    }
+
+    .section-card,
+    .skill-box,
+    .job,
+    .info-item,
+    .stat,
+    .resume-download {
+      background: #eaf4ff;
+      border-color: var(--line);
+    }
+
+    .pcd-badge-name,
+    .pill {
+      background: #dcecff;
+      color: #2b4f78;
+      border-color: #c8d8ea;
+    }
+
+    .pcd-panel,
+    .cta {
+      background: linear-gradient(135deg, #5f8fc4, #3f6f9f);
+      box-shadow: 0 18px 46px rgba(95, 143, 196, 0.22);
+    }
+
+    .button.primary,
+    .button.secondary,
+    .button.light,
+    .cta-actions .button,
+    .hero-actions .button {
+      background: #5f8fc4;
+      color: #ffffff;
+      border-color: #5f8fc4;
+      box-shadow: 0 12px 26px rgba(95, 143, 196, 0.24);
+    }
+
+    .button.primary:hover,
+    .button.secondary:hover,
+    .button.light:hover,
+    .cta-actions .button:hover,
+    .hero-actions .button:hover {
+      background: #4f80b6;
+      border-color: #4f80b6;
+    }
+
+    .button.ghost-light {
+      /* Mantido sem alteração específica para preservar o botão Imprimir esta página. */
+    }
+
+
+    /* Ajustes finais solicitados: menu visível no topo, card do currículo com borda e botões azuis iguais */
+    header {
+      position: static !important;
+      top: auto !important;
+    }
+
+    nav ul {
+      display: flex !important;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .resume-download {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 1.2rem;
+      align-items: center;
+      padding: clamp(1.2rem, 3vw, 2rem);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: 0 16px 42px rgba(16, 36, 63, 0.08);
+      background: var(--sky);
+    }
+
+    .resume-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .resume-actions .button.light,
+    .resume-actions .button.ghost-light {
+      background: #5f8fc4;
+      color: #ffffff;
+      border-color: #5f8fc4;
+      box-shadow: 0 12px 26px rgba(95, 143, 196, 0.24);
+      font-size: 1rem;
+    }
+
+    .resume-actions .button.light:hover,
+    .resume-actions .button.ghost-light:hover {
+      background: #4f80b6;
+      border-color: #4f80b6;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav ul {
+        justify-content: flex-start;
+      }
+
+      .resume-download {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      nav ul {
+        gap: 0.25rem;
+      }
+
+      nav a {
+        padding: 0.5rem 0.65rem;
+        font-size: 0.88rem;
+      }
+
+      .resume-actions .button {
+        width: 100%;
+      }
+    }
+
+
+
+    /* Ajuste solicitado: cabeçalho fixo apenas com KA e nome completo; menu separado e não fixo */
+    header {
+      position: sticky !important;
+      top: 0 !important;
+      z-index: 40;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(18px);
+    }
+
+    header .nav {
+      justify-content: flex-start;
+    }
+
+    .top-menu {
+      position: static;
+      background: rgba(255, 255, 255, 0.72);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .top-menu ul {
+      display: flex !important;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      list-style: none;
+      margin: 0;
+      padding: 0.75rem 0;
+    }
+
+    .top-menu a {
+      display: inline-flex;
+      padding: 0.55rem 0.8rem;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+      transition: 180ms ease;
+    }
+
+    .top-menu a:hover,
+    .top-menu a:focus-visible {
+      background: #eaf4ff;
+      color: #2b4f78;
+      outline: none;
+    }
+
+    @media (max-width: 900px) {
+      .top-menu ul {
+        display: flex !important;
+      }
+    }
+
+
+    /* Ajuste solicitado: KA e nome completo centralizados verticalmente no cabeçalho fixo */
+    header .nav {
+      min-height: 96px !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      flex-direction: row !important;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+
+    header .brand {
+      align-items: center !important;
+      line-height: 1.15;
+    }
+
+    @media (max-width: 900px) {
+      header .nav {
+        min-height: 96px !important;
+        align-items: center !important;
+        flex-direction: row !important;
+      }
+    }
+
+    @media (max-width: 560px) {
+      header .nav {
+        min-height: 96px !important;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+      }
+    }
+
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kaio Adriel Guimarães",
+    "jobTitle": "Auxiliar/Assistente Administrativo",
+    "email": "mailto:kaioadriel.contato@gmail.com",
+    "telephone": "+55 13 99706-3969",
+    "url": "https://kaioadriel.com.br",
+    "sameAs": ["https://linkedin.com/in/kaioadriel"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Praia Grande",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header aria-label="Cabeçalho do site">
+    <div class="container nav">
+      <a class="brand" href="#topo" aria-label="Início da página profissional de Kaio Adriel Guimarães">
+        <span class="brand-mark" aria-hidden="true">KA</span>
+        <span>Kaio Adriel Guimarães</span>
+      </a>
+    </div>
+  </header>
+
+  <nav class="top-menu" aria-label="Navegação principal">
+    <div class="container">
+      <ul>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#curriculo-pdf">Currículo PDF</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <h1>Kaio Adriel Guimarães</h1>
+          <span class="pcd-badge-name">PCD</span>
+          <p class="subtitle">
+            Profissional com experiência administrativa, facilidade com tecnologia, planilhas e
+            Inteligência Artificial. Busco oportunidade como <strong>Auxiliar/Assistente Administrativo</strong>,
+            com disponibilidade para atuação <strong>presencial</strong> ou <strong>home office</strong>, colaborando com
+            organização de processos, controles internos, criação de planilhas personalizadas, automações
+            simples e soluções práticas sob medida para as necessidades do setor. Quando não existir uma
+            planilha de controle, um fluxo organizado ou uma ferramenta simples, posso estruturar uma solução
+            personalizada para melhorar o trabalho da equipe.
+          </p>
+
+          <div class="hero-actions" aria-label="Links de contato rápido">
+            <a class="button primary" href="mailto:kaioadriel.contato@gmail.com?subject=Contato%20profissional%20-%20Kaio%20Adriel">Enviar e-mail</a>
+            <a class="button secondary" href="https://wa.me/5513997063969" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+            <a class="button secondary" href="https://linkedin.com/in/kaioadriel" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+          </div>
+
+          <div class="stats" aria-label="Resumo profissional">
+            <div class="stat">
+              <strong>14+</strong>
+              <span>anos de experiência</span>
+            </div>
+            <div class="stat">
+              <strong>PCD</strong>
+              <span>apto para vagas inclusivas</span>
+            </div>
+            <div class="stat">
+              <strong>IA</strong>
+              <span>produtividade e marketing</span>
+            </div>
+            <div class="stat">
+              <strong>Presencial</strong>
+              <span>ou home office</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="contact-card" id="contato" aria-label="Informações rápidas de contato">
+          <div class="pcd-panel">
+            <strong>PCD</strong>
+            <span>PCD - Deficiente Físico - CID: S14.3, apto para vagas destinadas ao cumprimento de cotas PCD.</span>
+          </div>
+
+          <div class="quick-info">
+            <div class="info-item">
+              <small>Cidade</small>
+              <span>Praia Grande/SP</span>
+            </div>
+            <div class="info-item">
+              <small>E-mail</small>
+              <a href="mailto:kaioadriel.contato@gmail.com">kaioadriel.contato@gmail.com</a>
+            </div>
+            <div class="info-item">
+              <small>Telefone</small>
+              <a href="tel:+5513997063969">(13) 99706-3969</a>
+            </div>
+            <div class="info-item">
+              <small>LinkedIn</small>
+              <a href="https://linkedin.com/in/kaioadriel" target="_blank" rel="noopener noreferrer">/in/kaioadriel</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="perfil">
+      <div class="container">
+        <div class="section-title">
+          <h2>Perfil profissional</h2>
+          <p>Uma página direta para recrutadores entenderem como posso contribuir com organização, tecnologia e soluções administrativas.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="section-card">
+            <p class="about-text">
+              Tenho experiência em rotinas administrativas, conferência de documentos, controle de contas,
+              organização de pedidos, vendas online, elaboração de planilhas, acompanhamento de processos
+              e suporte operacional. Minha principal proposta é unir experiência administrativa, facilidade com
+              tecnologia, Excel e Inteligência Artificial para criar controles, planilhas, fluxos, automações simples
+              e soluções personalizadas para o que cada setor precisa. Quando não existe uma planilha de controle,
+              um fluxo organizado ou um sistema simples, posso estruturar uma solução prática para melhorar a rotina
+              da equipe, reduzir retrabalho e deixar as informações mais claras.
+            </p>
+          </article>
+
+          <article class="section-card">
+            <h3>Principais áreas de atuação</h3>
+            <div class="pill-list" aria-label="Áreas de atuação">
+              <span class="pill">Auxiliar Administrativo</span>
+              <span class="pill">Assistente Administrativo</span>
+              <span class="pill">Vendas online</span>
+              <span class="pill">Inteligência Artificial</span>
+              <span class="pill">Marketing digital</span>
+              <span class="pill">Backoffice</span>
+              <span class="pill">Contas a pagar e receber</span>
+              <span class="pill">Planilhas e controles personalizados</span>
+              <span class="pill">Documentação</span>
+              <span class="pill">Soluções administrativas digitais</span>
+              <span class="pill">Inteligência Artificial aplicada</span>
+              <span class="pill">Presencial ou home office</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <div class="container">
+        <div class="section-title">
+          <h2>Experiência</h2>
+          <p>Histórico profissional com atuação em vendas online, administração, tecnologia, financeiro, importação e exportação.</p>
+        </div>
+
+        <div class="section-card timeline">
+          <article class="job">
+            <time>Fev/2020 - Atual</time>
+            <div>
+              <h3>Vendedor Online / E-commerce Autônomo</h3>
+              <div class="company">Vendas online e marketing digital</div>
+              <p>Venda de produtos online por redes sociais, marketplaces e aplicativos de mensagem, com atendimento a clientes, negociação, controle de pedidos, acompanhamento de pagamentos e entregas, divulgação de produtos e suporte no pós-venda. Utilização de ferramentas de Inteligência Artificial para criação de textos comerciais, anúncios, ideias de publicidade, materiais de marketing digital, imagens e conteúdos para divulgação.</p>
+            </div>
+          </article>
+
+          <article class="job">
+            <time>Fev/2016 - Jan/2020</time>
+            <div>
+              <h3>Auxiliar Administrativo</h3>
+              <div class="company">BV Financeira</div>
+              <p>Auxílio em processos de financiamentos e empréstimos, gestão e conferência de contratos, validação documental, lançamentos no contas a pagar, compras, fornecedores, malotes, suporte a colaboradores, criação de planilhas personalizadas, apresentações de resultados e auxílio com tecnologia para organização, controle e melhoria das rotinas administrativas.</p>
+            </div>
+          </article>
+
+          <article class="job">
+            <time>Fev/2014 - Dez/2015</time>
+            <div>
+              <h3>Assistente de Atendimento</h3>
+              <div class="company">Ecoporto Santos</div>
+              <p>Atendimento ao cliente por telefone e e-mail, tratativas com setores internos, esclarecimento de dúvidas, solução de problemas e apoio a demandas comerciais.</p>
+            </div>
+          </article>
+
+          <article class="job">
+            <time>Out/2010 - Jan/2014</time>
+            <div>
+              <h3>Auxiliar de Importação Pleno</h3>
+              <div class="company">Brasiliense Comissária de Despachos</div>
+              <p>Acompanhamento de chegada de navios, documentação de carga, pagamentos, conferências, liberação de BL, armazenagem, agendamento de transporte e atendimento ao importador.</p>
+            </div>
+          </article>
+
+          <article class="job">
+            <time>Jul/2009 - Out/2010</time>
+            <div>
+              <h3>Auxiliar de Exportação</h3>
+              <div class="company">Brasiliense Comissária de Despachos</div>
+              <p>Digitação de draft de BL, DDE, desembaraço, documentos para o Ministério da Agricultura e pagamentos junto a agências e armadores.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <div class="container">
+        <div class="section-title">
+          <h2>Habilidades e cursos</h2>
+          <p>Ferramentas e formações complementares voltadas a produtividade, tecnologia, planilhas, IA e controle administrativo.</p>
+        </div>
+
+        <div class="skills-grid" aria-label="Habilidades principais">
+          <article class="skill-box">
+            <h3>Inteligência Artificial</h3>
+            <p>Uso prático de ChatGPT, Gemini e Claude para prompts avançados, criação de textos, apoio administrativo, publicidade e marketing digital, geração de imagens e vídeos, organização de informações e desenvolvimento assistido de apps, sites e soluções digitais.</p>
+          </article>
+          <article class="skill-box">
+            <h3>Excel avançado</h3>
+            <p>Criação de planilhas, controles personalizados, organização de dados, indicadores, acompanhamento de rotinas administrativas e apoio à tomada de decisão.</p>
+          </article>
+          <article class="skill-box">
+            <h3>Soluções sob medida</h3>
+            <p>Capacidade de entender a necessidade do setor e estruturar planilhas, controles, fluxos, documentos e ferramentas simples para melhorar a rotina.</p>
+          </article>
+          <article class="skill-box">
+            <h3>Tecnologia</h3>
+            <p>Facilidade com sistemas, ferramentas digitais, processos online, automações simples, adaptação rápida e criação de soluções práticas para o setor.</p>
+          </article>
+          <article class="skill-box">
+            <h3>Pacote Office</h3>
+            <p>Word, PowerPoint, apresentações, documentos e comunicação profissional.</p>
+          </article>
+          <article class="skill-box">
+            <h3>Administrativo</h3>
+            <p>Contas, documentos, fornecedores, estoque, malotes, notas fiscais, controles internos, organização de dados e suporte a processos.</p>
+          </article>
+          <article class="skill-box">
+            <h3>Organização</h3>
+            <p>Produtividade, gestão de tempo, acompanhamento de pendências e melhoria de processos.</p>
+          </article>
+        </div>
+
+        <article class="section-card" style="margin-top: 1rem;">
+          <h3 style="margin-bottom: 1rem;">Formação e cursos</h3>
+          <ul class="courses">
+            <li>Ensino Médio Completo - Prof. Dr. Oswaldo Santos Soares, concluído em 2008</li>
+            <li>Inteligência Artificial: Do Zero ao Avançado</li>
+            <li>Excel Avançado</li>
+            <li>Macros e VBA para Excel</li>
+            <li>Técnicas para Dashboards Profissionais no Excel</li>
+            <li>Customer Success na Prática</li>
+            <li>Gestão da Inovação e Processos de Criatividade</li>
+            <li>Gestão de Tempo, Organização, Produtividade e GTD</li>
+            <li>PDCA e Ferramentas de Qualidade</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="curriculo-pdf" aria-label="Currículo em PDF">
+      <div class="container">
+        <div class="resume-download">
+          <div>
+            <h2>Currículo em PDF</h2>
+            <p>
+              Para recrutadores que preferem documento tradicional, disponibilizo uma versão em PDF com as informações profissionais organizadas em formato de currículo imprimível.
+            </p>
+          </div>
+          <div class="resume-actions">
+            <a class="button light" href="https://kaioadriel.com.br/curriculo/kaioadrielguimaraes.pdf" target="_blank" rel="noopener noreferrer">Abrir currículo em PDF</a>
+            <button class="button ghost-light" type="button" onclick="window.print()">Imprimir esta página</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Chamada para contato">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Vamos conversar?</h2>
+            <p>
+              Estou disponível para oportunidades como Auxiliar/Assistente Administrativo, tanto presenciais quanto em home office.
+              Posso contribuir com experiência administrativa, tecnologia, planilhas, Inteligência Artificial e criação de controles, fluxos e soluções personalizadas para melhorar o trabalho do setor.
+              Minha deficiência física não me impede de oferecer um ótimo trabalho, com responsabilidade, organização e foco em resultados.
+            </p>
+          </div>
+          <div class="cta-actions" aria-label="Opções de contato">
+            <a class="button primary" href="mailto:kaioadriel.contato@gmail.com?subject=Oportunidade%20profissional%20-%20Kaio%20Adriel">Enviar e-mail</a>
+            <a class="button secondary light" href="https://wa.me/5513997063969" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Kaio Adriel Guimarães</span>
+      <span>Auxiliar/Assistente Administrativo | Tecnologia | PCD</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
